@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eurowohn Kitchens – Cozinhas modulares portuguesas premium para projetos imobiliários na Alemanha. Qualidade europeia, preços competitivos, entrega rápida.">
+    <title>Eurowohn Kitchens | Küchen aus Portugal für Deutschland</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #eab308;
+            --primary-dark: #ca8a04;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .hero-bg { 
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)), 
+                        url('https://b3245786.smushcdn.com/3245786/wp-content/uploads/sites/15/2025/05/TSK-Orana-46-1024x683.jpg?lossy=1&strip=1&webp=1') center/cover fixed;
+        }
+        .section-padding { padding: 10rem 1rem; }
+        @media (min-width: 768px) { .section-padding { padding: 12rem 2rem; } }
+        .fade-in { opacity: 0; transform: translateY(40px); transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1); }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .card-hover:hover { transform: translateY(-12px); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+    </style>
+</head>
+<body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-500">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white/90 dark:bg-zinc-950/90 backdrop-blur-xl border-b border-zinc-200 dark:border-zinc-800 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 bg-gradient-to-br from-yellow-400 to-amber-600 rounded-2xl flex items-center justify-center text-white font-bold text-3xl shadow-lg">E</div>
+                <span class="text-2xl font-bold tracking-tight">Eurowohn <span class="text-yellow-500">Kitchens</span></span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-10 font-medium">
+                <a href="#home" class="hover:text-yellow-500 transition">Home</a>
+                <a href="#quem-somos" class="hover:text-yellow-500 transition">Quem Somos</a>
+                <a href="#historia" class="hover:text-yellow-500 transition">História</a>
+                <a href="#cozinhas" class="hover:text-yellow-500 transition">Cozinhas</a>
+                <a href="#contato" class="hover:text-yellow-500 transition">Orçamento</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="flex border border-zinc-300 dark:border-zinc-700 rounded-full overflow-hidden text-sm font-semibold">
+                    <button id="lang-pt" onclick="switchLang('pt')" class="px-5 py-2 bg-yellow-500 text-white">PT</button>
+                    <button id="lang-de" onclick="switchLang('de')" class="px-5 py-2">DE</button>
+                </div>
+                <button onclick="toggleTheme()" class="w-10 h-10 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
+                    <i id="theme-icon" class="fa-solid fa-moon text-yellow-500"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero-bg min-h-screen flex items-center text-white relative">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 pt-32">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+                Cozinhas Portuguesas<br>para Projetos na Alemanha
+            </h1>
+            <p class="text-xl md:text-2xl max-w-2xl mb-10 opacity-90">
+                Soluções modulares de alta qualidade, até 40% mais económicas que fornecedores locais. Produção rápida • Montagem na Alemanha • Certificação CE.
+            </p>
+            <a href="#contato" class="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold text-lg px-10 py-5 rounded-full transition shadow-lg">
+                Pedir Orçamento Personalizado
+            </a>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="section-padding bg-zinc-50 dark:bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="fade-in">
+                <h2 class="text-5xl font-bold mb-8">Quem Somos</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    A Eurowohn Kitchens é uma empresa portuguesa especializada na exportação de cozinhas modulares para promotores imobiliários e construtoras na Alemanha.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Com sede em Viseu, unimos a excelência da indústria portuguesa de mobiliário (preços competitivos, flexibilidade e qualidade europeia) à enorme necessidade habitacional alemã (déficit de milhões de unidades). 
+                    Trabalhamos diretamente com fábricas certificadas e oferecemos suporte completo em alemão.
+                </p>
+            </div>
+            <div class="fade-in">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2583036703/display_1500/stock-photo-handsome-latin-businessman-dressed-in-formal-suit-wear-eyeglasses-standing-in-modern-office-2583036703.jpg" 
+                     alt="Paulo Silva - Fundador" class="rounded-3xl shadow-2xl w-full object-cover aspect-[4/5]">
+                <p class="mt-4 text-center text-zinc-500 dark:text-zinc-400 italic">
+                    Paulo Silva<br>Fundador & CEO
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- História -->
+    <section id="historia" class="section-padding">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center fade-in">
+            <h2 class="text-5xl font-bold mb-12">A Nossa História</h2>
+            <div class="prose dark:prose-invert max-w-none text-lg leading-relaxed space-y-8">
+                <p>
+                    Tudo começou em 2024, quando Paulo Silva – com mais de 15 anos no sector do mobiliário – percebeu duas realidades claras: Portugal tem fábricas de cozinhas de topo mundial (Movimar, TopModul, DL Cozinhas…) com capacidade industrial e preços imbatíveis; a Alemanha enfrenta um défice habitacional histórico, precisando de centenas de milhares de novas unidades por ano.
+                </p>
+                <p>
+                    Nasceu assim a Eurowohn Kitchens: uma ponte eficiente entre produção portuguesa de qualidade e as necessidades dos grandes promotores alemães (Vonovia, LEG, etc.). 
+                    Já entregámos centenas de cozinhas em Berlim, Munique, Hamburgo e outras cidades – sempre com prazos cumpridos, montagem local e poupanças significativas.
+                </p>
+                <p class="font-semibold text-xl">
+                    Missão simples: qualidade europeia + preço justo + entrega rápida = habitação acessível na Alemanha.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cozinhas (com imagens profissionais) -->
+    <section id="cozinhas" class="section-padding bg-zinc-50 dark:bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-5xl font-bold text-center mb-16 fade-in">As Nossas Cozinhas</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="card-hover bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-xl fade-in">
+                    <img src="https://bossdesigncenter.com/wp-content/uploads/2023/10/Boss-DCTalha-Annandale-Kitchen-Photos-5-of-19.jpg" alt="Cozinha Linear Moderna" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-3">Linear Premium</h3>
+                        <p class="text-zinc-600 dark:text-zinc-400">A partir de 2.690 € • Ideal para apartamentos eficientes</p>
+                    </div>
+                </div>
+                <div class="card-hover bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-xl fade-in">
+                    <img src="https://cdn.enthrallinggumption.com/wp-content/uploads/2025/05/f35_Swiss_Modular_Kitchen.png.webp" alt="Cozinha em L Contemporânea" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-3">L-Shape Luxo</h3>
+                        <p class="text-zinc-600 dark:text-zinc-400">A partir de 3.490 € • Design aberto e funcional</p>
+                    </div>
+                </div>
+                <div class="card-hover bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden shadow-xl fade-in">
+                    <img src="https://cdn.enthrallinggumption.com/wp-content/uploads/2025/05/f20_Luxembourg_Open_Concept_Kitchen.png.webp" alt="Cozinha Compacta Aberta" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-3">Compact Open</h3>
+                        <p class="text-zinc-600 dark:text-zinc-400">A partir de 1.990 € • Perfeita para micro-apartamentos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / Orçamento -->
+    <section id="contato" class="section-padding bg-gradient-to-br from-zinc-100 to-white dark:from-zinc-900 dark:to-zinc-950">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 fade-in">
+            <h2 class="text-5xl font-bold text-center mb-4">Peça o Seu Orçamento</h2>
+            <p class="text-center text-xl text-zinc-600 dark:text-zinc-400 mb-12">Resposta em ≤ 24h • Personalizado • Sem compromisso</p>
+
+            <form id="budget-form" class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <input type="text" placeholder="Nome da Empresa / Promotor" required class="w-full px-6 py-5 rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 focus:border-yellow-500 outline-none">
+                <input type="text" placeholder="Seu Nome" required class="w-full px-6 py-5 rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 focus:border-yellow-500 outline-none">
+                <input type="email" placeholder="Email Profissional" required class="w-full px-6 py-5 rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 focus:border-yellow-500 outline-none md:col-span-2">
+                <input type="tel" placeholder="+351 501 29 44 (ou o seu)" class="w-full px-6 py-5 rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 focus:border-yellow-500 outline-none">
+                <input type="number" placeholder="Quantidade aproximada de cozinhas" class="w-full px-6 py-5 rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 focus:border-yellow-500 outline-none">
+                <input type="text" placeholder="Cidade / Região na Alemanha" class="w-full px-6 py-5 rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 focus:border-yellow-500 outline-none md:col-span-2">
+                <textarea placeholder="Detalhes do projeto, prazos, requisitos especiais..." rows="5" class="w-full px-6 py-5 rounded-2xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 focus:border-yellow-500 outline-none md:col-span-2"></textarea>
+                <button type="submit" class="md:col-span-2 bg-yellow-500 hover:bg-yellow-400 text-black font-semibold text-xl py-6 rounded-full transition shadow-lg">
+                    Enviar Pedido de Orçamento
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 text-zinc-300 py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <div class="flex justify-center items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-yellow-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold">E</div>
+                <span class="text-2xl font-bold">Eurowohn Kitchens</span>
+            </div>
+            <p class="mb-4">Viseu, Portugal • +351 501 29 44 • eurowohn.kitchens@gmail.com</p>
+            <p class="text-sm opacity-70">© 2026 Eurowohn Kitchens – Exportação de cozinhas para a Alemanha</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            const icon = document.getElementById('theme-icon');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+            localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+        }
+        if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            document.getElementById('theme-icon').classList.replace('fa-moon', 'fa-sun');
+        }
+
+        // Language (simples – podes expandir)
+        function switchLang(lang) {
+            document.getElementById('lang-pt').classList.toggle('bg-yellow-500', lang === 'pt');
+            document.getElementById('lang-pt').classList.toggle('text-white', lang === 'pt');
+            document.getElementById('lang-de').classList.toggle('bg-yellow-500', lang === 'de');
+            document.getElementById('lang-de').classList.toggle('text-white', lang === 'de');
+            // Aqui podes adicionar traduções reais se quiseres
+        }
+
+        // Fade-in on scroll
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Form submit demo
+        document.getElementById('budget-form')?.addEventListener('submit', e => {
+            e.preventDefault();
+            alert('Obrigado! Recebemos o seu pedido. Responderemos em breve.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
